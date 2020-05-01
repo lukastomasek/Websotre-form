@@ -1,0 +1,48 @@
+:root {
+  --side-bar-col: #6f04d9;
+  --bg-col-1: #f2f2f2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  display: block;
+  background-color: var(--bg-col-1);
+}
+h1 {
+  text-align: center;
+  font-size: 5em;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+h2 {
+  padding-top: 2em;
+  padding-left: 7em;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 3em;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.side-bar {
+  height: 100vh;
+  display: flex;
+  width: 8rem;
+  flex-direction: column;
+  top: 0;
+  position: fixed;
+  background-color: var(--side-bar-col);
+}
+
+.shipping {
+  padding-left: 21rem;
+  padding-top: 2.5em;
+}
+#parcel-service {
+  padding: 1.5em;
+}
