@@ -3,32 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta />
     <link rel="stylesheet" href="css/index.css" />
     <title>Web Store Check Out Form</title>
   </head>
-  <body>
-    <nav>
-      <div class="side-bar">
-        <ul class="nav-list">
-          <li>test</li>
-          <li>test</li>
-        </ul>
-      </div>
-    </nav>
 
-    <h1>CHeck Out Form</h1>
-    <section class="shipping-sec">
-      <h2>shipping</h2>
-      <div class="shipping">
-        <input
-          id="parcel-service"
-          type="text"
-          value=""
-          placeholder="Parcel Service  $19.99"
-        />
-        <input type="radio" value="ps " name="methos" id="parcel-m" />
+  <body>
+    <header>
+      <nav class="side-bar">
+        <ul>
+          <li>
+            <img
+              class="icons store"
+              src="/img/commerce-and-shopping.png"
+              alt="store-icon"
+            />
+          </li>
+          <li>
+            <img class="icons home" src="/img/home.png" alt="home-icon" />
+          </li>
+          <li>
+            <img
+              class="icons settings"
+              src="/img/symbol.png"
+              alt="settings-icon"
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>check out</h1>
+    <section>
+      <div class="illustration">
+        <img class="store-f" src="img/Group 1.png" alt="shopping-ill" />
       </div>
+      <h2>shipping</h2>
+      <div class="shipping-1">
+        <div class="fedex">fedEX Service</div>
+        <input type="radio" name="fedex" id="fedex" value="12.99" />
+      </div>
+      <aside>
+        <div class="shipping-2">
+          <div class="parcel">parcel Service</div>
+          <input type="radio" name="parcel" id="parcel" value="19.99" />
+        </div>
+      </aside>
     </section>
+
+    <div class="submit-btn"><button>check out</button></div>
     <script src="/js/app.js"></script>
   </body>
 </html>
