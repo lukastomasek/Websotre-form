@@ -5,6 +5,7 @@
   --bg-col-1: #f2f2f2;
   --primary-col: #6c63ff;
   --noto-sans-font: "Jost", sans-serif;
+  --shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 * {
   padding: 0;
@@ -41,6 +42,15 @@ button {
   width: 10em;
   color: white;
 }
+
+option {
+  font-size: 2em;
+}
+select {
+  width: 21em;
+  height: 5em;
+  box-shadow: var(--shadow);
+}
 .side-bar {
   background-color: white;
   width: 3em;
@@ -55,7 +65,7 @@ button {
 
 .store {
   position: relative;
-  top: 2em;
+  top: 6em;
   float: left;
 }
 
@@ -67,13 +77,24 @@ button {
 
 .home {
   position: relative;
-  top: 6em;
+  top: 8em;
   float: left;
+}
+.hamburger {
+  position: relative;
+  float: left;
+  top: 2em;
 }
 
 .items {
   background-color: var(--primary-col);
   border-radius: 50%;
+}
+
+.icons:hover {
+  transform: scale(1.2);
+  border-radius: 50%;
+  background-color: var(--primary-col);
 }
 
 .illustration {
@@ -82,7 +103,15 @@ button {
   top: 6em;
   background-color: white;
   width: 40%;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: var(--shadow);
+}
+.welcome-txt {
+  font-size: 1.9em;
+  font-family: monospace;
+  text-transform: capitalize;
+  position: relative;
+  top: 3em;
+  left: 0.5em;
 }
 
 .store-f {
@@ -96,7 +125,7 @@ button {
   top: 5em;
   width: 15%;
   background-color: white;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: var(--shadow);
   text-transform: capitalize;
   text-align: center;
   font-size: 2em;
@@ -108,12 +137,17 @@ button {
   top: 5em;
   width: 15%;
   background-color: white;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: var(--shadow);
   text-transform: capitalize;
   text-align: center;
   font-size: 2em;
   margin-left: 5em;
 }
+.parcel-txt {
+  position: relative;
+  top: 0.5em;
+}
+
 #fedex,
 #parcel {
   position: relative;
@@ -127,7 +161,39 @@ input[type="radio"] {
 }
 
 .submit-btn {
-  position: fixed;
-  left: 50%;
-  bottom: 1em;
+  position: relative;
+  left: 48%;
+  bottom: -25em;
+}
+
+button:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+.tax-h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-transform: capitalize;
+  position: relative;
+  left: -8%;
+  top: 10em;
+}
+
+.tax {
+  position: relative;
+  float: left;
+  top: 19em;
+  left: -9.5em;
+}
+
+.q-box {
+  width: 21em;
+  height: 5em;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border-style: none;
+  position: relative;
+  top: 22.5em;
+  left: 1em;
 }
