@@ -40,51 +40,56 @@
       </nav>
     </header>
 
-    <h1>check out</h1>
-    <section>
-      <div class="illustration">
-        <p class="welcome-txt">welcome to check out page!</p>
-        <img class="store-f" src="img/Group 1.png" alt="shopping-ill" />
-      </div>
-      <h2>shipping</h2>
-      <div class="shipping-1">
-        <div class="fedex"><p class="parcel-txt">fedEX Service</p></div>
-        <input type="radio" name="check" id="fedex" value="12.99" />
-      </div>
-      <aside>
-        <div class="shipping-2">
-          <div class="parcel"><p class="parcel-txt">parcel Service</p></div>
-          <input type="radio" name="check" id="parcel" value="19.99" />
+    <form action="">
+      <section class="check-out-side">
+        <div id="check-out-txt"></div>
+      </section>
+
+      <h1>check out</h1>
+      <section>
+        <div class="illustration">
+          <p class="welcome-txt">welcome to check out page!</p>
+          <img class="store-f" src="img/Group 1.png" alt="shopping-ill" />
         </div>
-      </aside>
-    </section>
+        <h2>shipping</h2>
+        <div class="shipping-1">
+          <div class="fedex"><p class="parcel-txt">fedEX Service</p></div>
+          <input type="radio" name="shipping" id="fedex" value="12.99" />
+        </div>
+        <aside>
+          <div class="shipping-2">
+            <div class="parcel"><p class="parcel-txt">parcel Service</p></div>
+            <input type="radio" name="shipping" id="parcel" value="19.99" />
+          </div>
+        </aside>
+      </section>
 
-    <section>
-      <h2 class="tax-h2">tax</h2>
-      <div class="tax">
-        <select name="select-country" id="s-state">
-          <option value="">Select Country</option>
-          <option value="CA">Canada</option>
-          <option value="US">US</option>
-          <option value="EU">Germany</option>
-        </select>
-      </div>
-    </section>
+      <section>
+        <h2 class="tax-h2">tax</h2>
+        <div class="tax">
+          <select name="select-country" id="s-state">
+            <option value="">Select Country</option>
+            <option value="CA">Canada</option>
+            <option value="US">US</option>
+            <option value="EU">Germany</option>
+          </select>
+        </div>
+      </section>
 
-    <section>
-      <input
-        type="text"
-        name="quantity"
-        id="quantity"
-        placeholder="add items"
-        min="1"
-        max="10"
-        maxlength="10"
-        value=""
-        class="q-box"
-      />
-    </section>
-
+      <section>
+        <input
+          type="text"
+          name="quantity"
+          id="quantity"
+          placeholder="add items"
+          min="1"
+          max="10"
+          maxlength="10"
+          value=""
+          class="q-box"
+        />
+      </section>
+    </form>
     <div class="submit-btn">
       <button id="check-out-btn">check out</button>
     </div>

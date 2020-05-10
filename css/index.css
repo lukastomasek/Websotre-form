@@ -48,7 +48,7 @@ option {
 }
 select {
   width: 21em;
-  height: 5em;
+  height: 5.5em;
   box-shadow: var(--shadow);
 }
 .side-bar {
@@ -93,8 +93,6 @@ select {
 
 .icons:hover {
   transform: scale(1.2);
-  border-radius: 50%;
-  background-color: var(--primary-col);
 }
 
 .illustration {
@@ -184,16 +182,32 @@ button:hover {
   position: relative;
   float: left;
   top: 19em;
-  left: -9.5em;
+  left: -10em;
 }
 
 .q-box {
   width: 21em;
-  height: 5em;
+  height: 5.5em;
   text-align: center;
   box-shadow: var(--shadow);
   border-style: none;
   position: relative;
-  top: 22.5em;
-  left: 1em;
+  top: 22.7em;
+  left: 0.5em;
+}
+.check-out-side {
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  padding-left: 5em;
+  right: 0em;
+  z-index: 999;
+}
+
+#check-out-txt {
+  position: relative;
+  right: 1em;
+  font-family: monospace;
+  font-size: 1.2em;
+  text-transform: capitalize;
 }
