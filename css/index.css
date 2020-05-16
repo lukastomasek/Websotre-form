@@ -199,9 +199,10 @@ button:hover {
   background-color: white;
   height: 100vh;
   position: fixed;
-  padding-left: 5em;
+  padding-left: 8em;
   right: 0em;
   z-index: 999;
+  padding-right: 5em;
 }
 
 #check-out-txt {
@@ -210,4 +211,86 @@ button:hover {
   font-family: monospace;
   font-size: 1.2em;
   text-transform: capitalize;
+}
+
+.cart-h {
+  position: absolute;
+  top: 1em;
+  left: 5em;
+  display: inline;
+}
+.cart-content {
+  position: relative;
+  top: 10em;
+  left: -5em;
+}
+.check-out-c,
+.total {
+  font-size: 2em;
+  font-family: monospace;
+  margin: 0.5em;
+}
+
+.breakline {
+  border-bottom-style: ridge;
+  position: relative;
+  top: 15em;
+  left: -2.5em;
+}
+
+.total {
+  margin-top: 2em;
+  position: relative;
+  top: 10em;
+  left: -3em;
+}
+
+@media only screen and (max-width: 768px) {
+  .check-out-side {
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    padding-left: 0em;
+    right: 0em;
+    z-index: 999;
+    padding-right: 0em;
+    display: none;
+  }
+  .illustration {
+    position: relative;
+    left: 30%;
+    top: 5em;
+    background-color: white;
+    width: 50%;
+    box-shadow: var(--shadow);
+  }
+  .welcome-txt {
+    font-size: 1em;
+    font-family: monospace;
+    text-transform: capitalize;
+    position: relative;
+    top: 1em;
+    left: 0.5em;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  .store-f {
+    position: relative;
+    width: 50%;
+    left: 0.5em;
+    display: none;
+  }
+  .shipping-1 {
+    position: relative;
+    float: left;
+    left: 30%;
+    top: 5em;
+    width: 15%;
+    background-color: white;
+    box-shadow: var(--shadow);
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2em;
+  }
 }

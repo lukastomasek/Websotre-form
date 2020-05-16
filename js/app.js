@@ -1,9 +1,13 @@
 let $sBtn = document.getElementById("check-out-btn");
 let $state = document.getElementById("s-state");
 let $quantity = document.getElementById("quantity");
-let $totalTxt = document.getElementById("check-out-txt");
+//let $totalTxt = document.getElementById("check-out-txt");
 let $fedex = document.getElementById("fedex");
 let $parcel = document.getElementById("parcel");
+let $itemQuantityTxt = document.getElementById("items");
+let $itemShippingTxt = document.getElementById("items-sh");
+let $itemTaxtTxt = document.getElementById("items-tax");
+let $totalTxt = document.getElementById("items-total");
 let taxVal;
 let total;
 let itemsVal;
@@ -55,6 +59,12 @@ $sBtn.addEventListener("click", function () {
   itemsVal = (parseInt($quantity.value, 10) || 0) * 12.99;
   taxVal = Math.floor(taxVal) * 100;
   total = itemsVal + shippingCost + taxVal / 100;
-  console.log(`your total price is : $ ${total.toFixed(2)} `);
-  $totalTxt.innerText = `your total price is : $ ${total.toFixed(2)} `;
+
+  // filling out / returning information to the check out form
+  $itemQuantityTxt.innerHTML = `item quantity: ${$quantity.value}`;
+  $itemShippingTxt.innerHTML = `shipping cost: ${shippingCost}`;
+  $itemTaxtTxt.innerHTML = `tax: ${taxVal / 100} %`;
+  $totalTxt.innerHTML = `total: $ ${total.toFixed(2)}`;
 });
+
+//todo : add media querry , and style the check out side
