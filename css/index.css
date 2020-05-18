@@ -51,6 +51,10 @@ select {
   height: 5.5em;
   box-shadow: var(--shadow);
 }
+form {
+  position: relative;
+  left: -10em;
+}
 .side-bar {
   background-color: white;
   width: 3em;
@@ -160,8 +164,8 @@ input[type="radio"] {
 
 .submit-btn {
   position: relative;
-  left: 48%;
-  bottom: -25em;
+  left: 37%;
+  bottom: -22em;
 }
 
 button:hover {

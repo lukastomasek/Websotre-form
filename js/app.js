@@ -62,7 +62,7 @@ $sBtn.addEventListener("click", function () {
 
   // filling out / returning information to the check out form
   $itemQuantityTxt.innerHTML = `item quantity: ${$quantity.value}`;
-  $itemShippingTxt.innerHTML = `shipping cost: ${shippingCost}`;
+  $itemShippingTxt.innerHTML = `shipping cost: $ ${shippingCost}`;
   $itemTaxtTxt.innerHTML = `tax: ${taxVal / 100} %`;
   $totalTxt.innerHTML = `total: $ ${total.toFixed(2)}`;
 });
